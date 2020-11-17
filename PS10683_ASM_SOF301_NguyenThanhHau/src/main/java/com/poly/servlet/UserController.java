@@ -71,10 +71,19 @@ public class UserController extends HttpServlet {
         user.setEmail(email);
         user.setPhone(phone);
         user.setRole(role);
-        userDao.insertUser(user);
-        response.sendRedirect("Admin/Show_User.jsp");
+//        userDao.insertUser(user);
+        if (userDao.insertUser(user)) {
+            request.getSession().setAttribute("message", "Thêm Thành Công");
+            response.sendRedirect("Admin/Show_User.jsp");
+            request.getSession().setAttribute("status", "Success");
+
+        } else {
+            request.getSession().setAttribute("message", "Thêm Thất Bại");
+            request.getSession().setAttribute("status", "Danger");
+        }
 
     }
+    
 
     private void deleteUser(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

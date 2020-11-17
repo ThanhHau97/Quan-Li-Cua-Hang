@@ -55,7 +55,7 @@
                         ID:<%= pro.getId()%><br>          
                         Name: <input class="form-control" type="text" name="name" value="<%= pro.getName()%>"></input><br>
                         Price: <input class="form-control" type="text" name="price" value="<%= pro.getPrice()%>"></input><br>
-                        Note: <input class="form-control" type="text" name="note" value="<%= pro.getNote()%>"></input><br>
+                        Note: <input class="form-control" type="text" name="note" value="<%= pro.getNote()%>" ></input><br>
                         Image: <input class="form-control" type="text" name="image" value="<%= pro.getImage()%>"></input><br>
                         Category_id: <input class="form-control" type="text" name="category_id" value="<%= pro.getCategory_id()%>"></input><br>
                         <input type="submit" name="_type" value="EXE_UPDATE" ></input>

@@ -72,7 +72,7 @@ GO
 INSERT  INTO dbo.USERNAME
         (  username, password, fullname, email, phone, role )
 VALUES  (  N'Teo', -- USERNAME - nvarchar(50)
-          N'123456', -- PASSWORD - nvarchar(50)
+          N'123', -- PASSWORD - nvarchar(50)
           N'Nguyen Van Teo', -- FULLNAME - nvarchar(50)
           N'Teonv@gmail.com', -- EMAIL - nvarchar(50)
           N'0796551414', -- PHONE - nchar(10)

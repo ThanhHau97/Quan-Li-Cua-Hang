@@ -57,7 +57,7 @@
                         <form method="get" action="../UserController">
                             <td><input style="background-color: red;color: white;" type="submit" name="_type" value="DELETE" ></input></td>
                             <td><input style="background-color: chartreuse;color: white;" type="submit" name="_type" value="UPDATE"></input></td>
-                            <td><input type="hidden" name="userid" value="<%= dsUser.get(i).getId()%>"></input></td>                                         
+                            <td><input type="hidden"  name="userid" value="<%= dsUser.get(i).getId()%>"></input></td>                                         
                         </form>
             </tr>
             <%}%>

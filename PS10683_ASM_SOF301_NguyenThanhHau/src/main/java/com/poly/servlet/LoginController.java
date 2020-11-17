@@ -41,14 +41,14 @@ public class LoginController extends HttpServlet {
            User user=use.CheckLogin(username, password);
            if(user==null){
                //request.getSession().setAttribute("Error", "Tài Khoản hoặc Mật Khẩu không đúng");
-                response.sendRedirect(request.getContextPath()+"/Login.jsp?message=user Không Tồn Tại");
+                response.sendRedirect(request.getContextPath()+"/Login.jsp?message=Login Fail");
             }else{
                 HttpSession session =request.getSession();
                 session.setAttribute("userLogined", user);
                 if(user.getRole()==1){
                     response.sendRedirect(request.getContextPath()+"/Admin/index.jsp");
                 }else{
-                response.sendRedirect(request.getContextPath()+"/index.jsp");
+                response.sendRedirect(request.getContextPath()+"/index.html");
                 }
             }
         }

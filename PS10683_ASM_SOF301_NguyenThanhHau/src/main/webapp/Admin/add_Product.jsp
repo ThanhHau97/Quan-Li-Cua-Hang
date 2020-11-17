@@ -64,7 +64,7 @@
                     <form  method="get" action="../ProController">
                         Name: <input class="form-control" type="text" name="name"></input><br>
                         Price: <input class="form-control" type="text" name="price"></input><br>
-                        Note: <input class="form-control" type="text" name="note"></input><br>
+                        Note: <input class="form-control" type="text" name="note"required="required"></input><br>
                         Image: <input class="form-control" type="text" name="image" value="<%= filename%>"></input><br>
                         Category:<select name="category_id">
                             <%

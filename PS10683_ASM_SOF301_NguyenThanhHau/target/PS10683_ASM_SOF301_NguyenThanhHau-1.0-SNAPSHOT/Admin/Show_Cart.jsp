@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Your Shopping Cart!</h1>
-        <c:set var="shop" value="${sessionScope.SHOP}"/>
+        <c:set var="shop" value="${sessionScope.SHOP}">
         <c:if test="${not empty shop}">
             <table border="1">
                 <thead>
@@ -57,5 +57,6 @@
             </tbody>
         </table>
     </c:if>
+    </c:set>
 </body>
 </html>

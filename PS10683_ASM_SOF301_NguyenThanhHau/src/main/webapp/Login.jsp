@@ -16,11 +16,11 @@
         <div class="Container">
             <form action="LoginController" method="get"> 
                 <h1 style="text-align: center;">LOGIN</h1>
-                <input class="form-control" type="text" name="username" value="Linh"/><br/>
-                <input class="form-control" type="text" name="password" value="123456"/><br>
+                <input class="form-control" type="text" name="username" value=""/><br/>
+                <input class="form-control" type="text" name="password" value=""/><br>
                 <input class="form-check-input" type="checkbox" />REMEMBER ME  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 <a class="forgot" href="#">Reset Password</a><br><br>
-                <button class="btn" type="submit" value="submit">Sign Up</button><br>
+                <button class="btn" type="submit" name="btn" value="submit">Sign Up</button><br>
                 <%
                     String message = request.getParameter("message");
                     if (message != null) {
@@ -35,6 +35,6 @@
                 <p style="text-align: center;">Do not have an account? &nbsp;<a href="#"> Sign Up Here</a></p>
 
             </form>
-        </table>
+        </div>
 </body>
 </html>

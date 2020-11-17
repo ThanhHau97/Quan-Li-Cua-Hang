@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <img src="../Hinh/Bannerr.jpg" style="width: 100%; height: 250px"/>
+        <img src="../Hinh/bannerzz.jpg" style="width: 100%; height: 250px"/>
     </body>
 </html>

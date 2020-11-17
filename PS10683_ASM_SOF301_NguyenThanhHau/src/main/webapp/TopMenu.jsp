@@ -14,7 +14,7 @@
        
     </head>
     <body>
-          <img src="../Hinh/manu.jpg" style="width: 100%; height: 190px"/>
+          <img src="../Hinh/hình.png" style="width: 100%; height: 190px"/>
         <a href="<%= request.getContextPath()%>/Admin/index.jsp">Trang chủ</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
         <a href="<%= request.getContextPath()%>/Admin/Show_Cart.jsp">Giỏ hàng</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <%

@@ -48,12 +48,12 @@
                     <form  method="get" action="../UserController">                       
                         <label>UserName:</label> <input class="form-control" type="text" name="username"></input><br>
                         <label>Password:</label> <input class="form-control" type="text" name="password"></input><br>
-                        <label>FullName:</label> <input class="form-control" type="text" name="fullname"></input><br>
+                        <label>FullName:</label> <input class="form-control" type="text" name="fullname" required="required" ></input><br>
                         <label>Email:</label> <input class="form-control" type="text" name="email"></input><br>
                         <label>Phone:</label> <input class="form-control" type="text" name="phone"></input><br>
-                        <label>Role: </label><input type="radio" name="role" value="1">Admin</input>
-                        <input type="radio" name="role" value="0">User</input><br><br>
-                        <input style="background-color: blue;color: white;" type="submit" name="_type" value="INSERT" ></input>
+                        <label>Role: </label><input type="radio" name="role1" value="1">Admin</input>
+                        <input type="radio" name="role"0 value="0">User</input><br><br>
+                        <input style="background-color: blue;color: white;" type="submit" name="_type" class="submit" value="INSERT" ></input>
                     </form>
                     <!--Kết Thúc Nội Dung--->
                 </td>
